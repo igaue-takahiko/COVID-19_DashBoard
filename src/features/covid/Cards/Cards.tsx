@@ -1,14 +1,14 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import  Styles from "./Cards.module.css"
 import CountUp from 'react-countup'
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 import { GiHastyGrave } from 'react-icons/gi'
-import {MdLocalHospital } from 'react-icons/md'
+import { MdLocalHospital } from 'react-icons/md'
 import { AiFillLike } from 'react-icons/ai'
 
 import { selectData } from '../covidSlice';
+import  Styles from "./Cards.module.css"
 
 const Cards: React.FC = () => {
     const data = useSelector(selectData)
