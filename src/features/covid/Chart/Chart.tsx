@@ -19,7 +19,7 @@ const Chart: React.FC = () => {
                     label: "People",
                     backgroundColor: [
                         "rgba(0, 0, 255, 0.5)",
-                        "#0080080",
+                        "#008080",
                         "rgba(255, 0, 0, 0.5)"
                     ],
                     data: [

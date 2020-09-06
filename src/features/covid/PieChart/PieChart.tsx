@@ -15,14 +15,14 @@ const PieChart: React.FC = () => {
             labels: ["Infected", "Recovered", "Deaths"],
             datasets: [
                 {
-                    date: [
+                    data: [
                         data.confirmed.value,
                         data.recovered.value,
                         data.deaths.value,
                     ],
                     backgroundColor: [
                         "rgba(0, 0, 255, 0.5)",
-                        "#0080808",
+                        "#008080",
                         "rgba(225, 0, 0, 0.5)",
                     ],
                     hoverBackgroundColor: ["#36A2EB", "#3cb371", "#FF6384"],
