@@ -5,6 +5,7 @@ import dataJson from "./data.json"
 import dataJsonDaily from "./dataDaily.json";
 
 const apiUrl = "https://covid19.mathdro.id/api"
+const apiHerokuUrl = "https://covid19-api-udemy.herokuapp.com/api"
 
 type API_DATA = typeof dataJson
 type API_DATA_DAILY = typeof dataJsonDaily
@@ -86,7 +87,8 @@ export const fetchAsyncGet = createAsyncThunk("covid/get", async () => {
 })
 
 export const fetchAsyncGetDaily = createAsyncThunk("covid/getDaily", async () => {
-    const { data } = await axios.get<API_DATA_DAILY>(`${apiUrl}/daily`)
+    // const { data } = await axios.get<API_DATA_DAILY>(`${apiUrl}/daily`)
+    const { data } = await axios.get<API_DATA_DAILY>(`${apiHerokuUrl}/daily`)
     return data
 })
 
